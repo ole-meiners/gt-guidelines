@@ -12,7 +12,7 @@ jobs:
       
       - name: Git checkout
         uses: actions/checkout@v2
-      - name: Build Bootstrap ⚙️
+      - name: Build Bootstrap-German ⚙️
         uses: dita-ot/dita-ot-action@master
         with:
           
@@ -30,20 +30,20 @@ jobs:
             
           
           
-      - name: Build Bootstrap-english ⚙️
-        uses: dita-ot/dita-ot-action@master
-        with:
-          install: |
-            apt-get update -q
-            export DEBIAN_FRONTEND=noninteractive
-            apt-get install -qy --no-install-recommends nodejs
-            nodejs -v
-          plugins: |
-            https://github.com/jason-fox/fox.jason.extend.css/archive/master.zip
-            https://github.com/infotexture/dita-bootstrap/archive/develop.zip
-            https://github.com/jason-fox/fox.jason.prismjs/archive/master.zip
-          build: |
-           dita --project=.github/dita-ot/html_en.xml
+      #- name: Build Bootstrap-english ⚙️
+      #  uses: dita-ot/dita-ot-action@master
+      #  with:
+      #    install: |
+      #      apt-get update -q
+      #      export DEBIAN_FRONTEND=noninteractive
+      #      apt-get install -qy --no-install-recommends nodejs
+      #      nodejs -v
+      #    plugins: |
+      #      https://github.com/jason-fox/fox.jason.extend.css/archive/master.zip
+      #      https://github.com/infotexture/dita-bootstrap/archive/develop.zip
+      #      https://github.com/jason-fox/fox.jason.prismjs/archive/master.zip
+      #    build: |
+      #     dita --project=.github/dita-ot/html_en.xml
           
       
       - name: Set up JDK 1.8
@@ -89,11 +89,11 @@ jobs:
       
       
 
-      - name: Upload DITA Output to a ZIP file
-        uses: actions/upload-artifact@v2
-        with:
-          name: OCRD-GT-Guidelines
-          path: 'out'
+     # - name: Upload DITA Output to a ZIP file
+     #   uses: actions/upload-artifact@v2
+     #   with:
+     #     name: OCRD-GT-Guidelines
+     #     path: 'out'
 
       - name: Deploy DITA Output to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@3.7.1
