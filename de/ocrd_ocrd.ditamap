@@ -4,7 +4,7 @@
     <booktitle>
         <mainbooktitle>Ground Truth Richtlinien</mainbooktitle>
 
-    </booktitle>
+    </booktitle> 
     <bookmeta>
         <authorinformation>
             <personinfo>
@@ -30,6 +30,7 @@
     </bookmeta>
     <chapter href="trans/index.dita">
         <topicref href="trans/trDokuKonventionen.dita"/>
+        <topicref href="trans/ground_truth_typ.dita"/>
     </chapter>
     <chapter href="trans/trLevels.dita"/>
 
@@ -96,6 +97,7 @@
             <topicref href="trans/leerzeichen.dita">
                 <topicref href="trans/tr_level_1_3.dita"/>
                 <topicref href="trans/tr_level_2_3.dita"/>
+                <topicref href="trans/tr_compareLevel1_3.dita"/>
             </topicref>
         </topicref>
         <topicref href="trans/trErsetzungen.dita"/>
@@ -107,14 +109,9 @@
     </chapter>
     <chapter href="trans/layout.dita">
         <topicref href="trans/lyAllgemein.dita"/>
-        <topicref href="trans/lySatzspiegel.dita"/>
-        <topicref href="trans/lyRand.dita"/>
-        <topicref href="trans/lyLeserichtung.dita"/>
-        <topicref href="trans/lyTypographie.dita">
-            <topicref href="trans/lySchriftarten.dita"/>
-            <topicref href="trans/lyLigatur.dita"/>
-        </topicref>
         <topicref href="trans/lySeitentypen.dita"/>
+        <topicref href="trans/lyRand.dita"/>
+        <topicref href="trans/lySatzspiegel.dita"/>
         <topicref href="trans/lyTextregionen.dita">
             <topicref href="trans/ly_level_1_5.dita"/>
             <topicref href="trans/ly_level_2_5.dita"/>
@@ -147,6 +144,11 @@
             <topicref href="trans/lyRauschen.dita"/>
             <topicref href="trans/lySonstiges.dita"/>
         </topicref>
+        <topicref href="trans/lyTypographie.dita">
+            <topicref href="trans/lySchriftarten.dita"/>
+            <topicref href="trans/lyLigatur.dita"/>
+        </topicref>
+        <topicref href="trans/lyLeserichtung.dita"/>
     </chapter>
     <chapter href="trans/structur_gt.dita">
         <topicref href="structur_gt.ditamap" format="ditamap"/>
@@ -161,6 +163,7 @@
     <chapter href="trans/page_xml_erweiterungen.dita">
         <topicref href="trans/exif_pagexml_konkordanz.dita"/>
     </chapter>
+    <chapter href="trans/fa.dita"/>
     <chapter href="trans/impressum.dita"/>
 
 
